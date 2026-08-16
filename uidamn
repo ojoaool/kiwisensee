@@ -2974,7 +2974,8 @@ Items["Search"] = Instances:Create("Frame", {
     ZIndex = 2,
     BorderSizePixel = 0,
     BackgroundColor3 = FromRGB(22, 25, 29)
-                })  Items["Search"]:AddToTheme({BackgroundColor3 = "Inline"})
+})  
+Items["Search"]:AddToTheme({BackgroundColor3 = "Inline"})
 
                 Instances:Create("UIGradient", {
                     Parent = Items["Search"].Instance,
