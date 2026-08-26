@@ -2964,18 +2964,17 @@ local Library do
                     PaddingRight = UDimNew(0, 8),
                     PaddingLeft = UDimNew(0, 8)
                 })
-Items["Search"] = Instances:Create("Frame", {
-    Parent = Items["Content"].Instance,
-    Name = "\0",
-    Size = UDim2New(0, 250, 0, 32),
-    AnchorPoint = Vector2New(0.5, 0),
-    Position = UDim2New(0.5, 0, 0, 8),
-    BorderColor3 = FromRGB(0, 0, 0),
-    ZIndex = 2,
-    BorderSizePixel = 0,
-    BackgroundColor3 = FromRGB(22, 25, 29)
-})  
-Items["Search"]:AddToTheme({BackgroundColor3 = "Inline"})
+
+                Items["Search"] = Instances:Create("Frame", {
+                    Parent = Items["OptionHolder"].Instance,
+                    Name = "\0",
+                    Size = UDim2New(1, -16, 0, 25),
+                    Position = UDim2New(0, 8, 0, 8),
+                    BorderColor3 = FromRGB(0, 0, 0),
+                    ZIndex = 5,
+                    BorderSizePixel = 0,
+                    BackgroundColor3 = FromRGB(22, 25, 29)
+                })  Items["Search"]:AddToTheme({BackgroundColor3 = "Inline"})
 
                 Instances:Create("UIGradient", {
                     Parent = Items["Search"].Instance,
@@ -7273,52 +7272,6 @@ Items["Search"]:AddToTheme({BackgroundColor3 = "Inline"})
                     CornerRadius = UDimNew(0, 5)
                 })
 
-                Items["Pages"] = Instances:Create("Frame", {
-                    Parent = Items["MainFrame"].Instance,
-                    Name = "\0",
-                    BorderColor3 = FromRGB(0, 0, 0),
-                    AnchorPoint = Vector2New(0.5, 0),
-                    BorderSizePixel = 0,
-                    Position = UDim2New(0.5, 0, 1, 8),
-                    Size = UDim2New(0, 0, 0, 45),
-                    ZIndex = 2,
-                    AutomaticSize = Enum.AutomaticSize.X,
-                    BackgroundColor3 = FromRGB(16, 18, 21)
-                })  Items["Pages"]:AddToTheme({BackgroundColor3 = "Background"})
-
-                Instances:Create("UICorner", {
-                    Parent = Items["Pages"].Instance,
-                    Name = "\0",
-                    CornerRadius = UDimNew(1, 0)
-                })
-
-                Items["Holder"] = Instances:Create("Frame", {
-                    Parent = Items["Pages"].Instance,
-                    Name = "\0",
-                    BackgroundTransparency = 1,
-                    Size = UDim2New(0, 0, 1, 0),
-                    BorderColor3 = FromRGB(0, 0, 0),
-                    BorderSizePixel = 0,
-                    AutomaticSize = Enum.AutomaticSize.X,
-                    BackgroundColor3 = FromRGB(255, 255, 255)
-                })
-
-                Instances:Create("UIPadding", {
-                    Parent = Items["Holder"].Instance,
-                    Name = "\0",
-                    PaddingRight = UDimNew(0, 8),
-                    PaddingLeft = UDimNew(0, 8)
-                })
-
-                Instances:Create("UIListLayout", {
-                    Parent = Items["Holder"].Instance,
-                    Name = "\0",
-                    VerticalAlignment = Enum.VerticalAlignment.Center,
-                    FillDirection = Enum.FillDirection.Horizontal,
-                    Padding = UDimNew(0, 5),
-                    SortOrder = Enum.SortOrder.LayoutOrder
-                })
-
                 Items["Shadow"] = Instances:Create("ImageLabel", {
                     Parent = Items["MainFrame"].Instance,
                     Name = "\0",
@@ -7548,11 +7501,57 @@ Items["Search"]:AddToTheme({BackgroundColor3 = "Inline"})
                     BackgroundColor3 = FromRGB(255, 255, 255)
                 })
 
+                Items["Pages"] = Instances:Create("Frame", {
+                    Parent = Items["Content"].Instance,
+                    Name = "\0",
+                    BorderColor3 = FromRGB(0, 0, 0),
+                    AnchorPoint = Vector2New(0, 0),
+                    BorderSizePixel = 0,
+                    Position = UDim2New(0, 8, 0, 8),
+                    Size = UDim2New(0, 0, 0, 45),
+                    ZIndex = 2,
+                    AutomaticSize = Enum.AutomaticSize.X,
+                    BackgroundColor3 = FromRGB(16, 18, 21)
+                })  Items["Pages"]:AddToTheme({BackgroundColor3 = "Background"})
+
+                Instances:Create("UICorner", {
+                    Parent = Items["Pages"].Instance,
+                    Name = "\0",
+                    CornerRadius = UDimNew(1, 0)
+                })
+
+                Items["Holder"] = Instances:Create("Frame", {
+                    Parent = Items["Pages"].Instance,
+                    Name = "\0",
+                    BackgroundTransparency = 1,
+                    Size = UDim2New(0, 0, 1, 0),
+                    BorderColor3 = FromRGB(0, 0, 0),
+                    BorderSizePixel = 0,
+                    AutomaticSize = Enum.AutomaticSize.X,
+                    BackgroundColor3 = FromRGB(255, 255, 255)
+                })
+
+                Instances:Create("UIPadding", {
+                    Parent = Items["Holder"].Instance,
+                    Name = "\0",
+                    PaddingRight = UDimNew(0, 8),
+                    PaddingLeft = UDimNew(0, 8)
+                })
+
+                Instances:Create("UIListLayout", {
+                    Parent = Items["Holder"].Instance,
+                    Name = "\0",
+                    VerticalAlignment = Enum.VerticalAlignment.Center,
+                    FillDirection = Enum.FillDirection.Horizontal,
+                    Padding = UDimNew(0, 5),
+                    SortOrder = Enum.SortOrder.LayoutOrder
+                })
+
                 Items["Search"] = Instances:Create("Frame", {
                     Parent = Items["Content"].Instance,
                     Name = "\0",
                     Size = UDim2New(0, 250, 0, 32),
-                    Position = UDim2New(0, 8, 0, 8),
+                    Position = UDim2New(0, 8, 0, 61),
                     BorderColor3 = FromRGB(0, 0, 0),
                     ZIndex = 2,
                     BorderSizePixel = 0,
@@ -7869,8 +7868,8 @@ Items["Search"]:AddToTheme({BackgroundColor3 = "Inline"})
                     Name = "\0",
                     BorderColor3 = FromRGB(0, 0, 0),
                     BackgroundTransparency = 1,
-                    Position = UDim2New(0, 7, 0, 48),
-                    Size = UDim2New(1, -14, 1, -55),
+                    Position = UDim2New(0, 7, 0, 101),
+                    Size = UDim2New(1, -14, 1, -108),
                     ZIndex = 2,
                     BorderSizePixel = 0,
                     BackgroundColor3 = FromRGB(255, 255, 255)
@@ -7985,7 +7984,7 @@ Items["Search"]:AddToTheme({BackgroundColor3 = "Inline"})
                 end
 
                 if Page.SubPages then 
-                    Items["Columns"].Instance.Size = UDim2New(1, -14, 1, -108)
+                    Items["Columns"].Instance.Size = UDim2New(1, -14, 1, -161)
 
                     Items["SubPages"] = Instances:Create("Frame", {
                         Parent = Items["PageContent"].Instance,
@@ -8329,7 +8328,8 @@ Items["Search"]:AddToTheme({BackgroundColor3 = "Inline"})
                 Items["Playerlist"] = Instances:Create("Frame", {
                     Parent = Playerlist.Page.Items["PageContent"].Instance,
                     Name = "\0",
-                    Size = UDim2New(1, 0, 1, 0),
+                    Position = UDim2New(0, 7, 0, 101),
+                    Size = UDim2New(1, -14, 1, -108),
                     BorderColor3 = FromRGB(0, 0, 0),
                     ZIndex = 2,
                     BorderSizePixel = 0,
