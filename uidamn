@@ -2128,7 +2128,11 @@ local Library do
             Url = "https://github.com/sametexe001/luas/raw/refs/heads/main/fonts/InterSemibold.ttf"
         })
 
-        Library.Font = CustomFont:Get("Inter")
+        CustomFont:New("ComicSans", 400, "Regular", {
+    Url = "https://github.com/antimatter15/doge/blob/master/Comic%20Sans%20MS.ttf"
+})
+
+        Library.Font = CustomFont:Get("ComicSans")
     end
 
     local Themes = {
