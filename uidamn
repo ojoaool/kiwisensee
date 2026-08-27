@@ -2129,7 +2129,7 @@ local Library do
         })
 
         CustomFont:New("ComicSans", 400, "Regular", {
-    Url = "https://github.com/antimatter15/doge/blob/master/Comic%20Sans%20MS.ttf"
+    Url = "https://raw.githubusercontent.com/antimatter15/doge/master/Comic%20Sans%20MS.ttf"
 })
 
         Library.Font = CustomFont:Get("ComicSans")
