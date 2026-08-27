@@ -1,6 +1,6 @@
 --[[
     kiwisense
-    Made by same
+    Made by samet
 
     assign different flags to each element to prevent from configs overriding eachother
     example is at the bottom
@@ -7347,9 +7347,9 @@ do
 
             return KeybindList
         end
+    end
 
         
-)
             Data = Data or {}
 
             local Window = {
