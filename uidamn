@@ -2124,9 +2124,6 @@ local Library do
             end
         end
 
-        CustomFont:New("Inter", 200, "Regular", {
-            Url = "https://github.com/sametexe001/luas/raw/refs/heads/main/fonts/InterSemibold.ttf"
-        })
 
         CustomFont:New("ComicSans", 400, "Regular", {
     Url = "https://github.com/antimatter15/doge/raw/refs/heads/master/Comic%20Sans%20MS.ttf"
