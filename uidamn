@@ -1,6 +1,6 @@
 --[[
     kiwisense
-    Made by same
+    Made by samet
 
     assign different flags to each element to prevent from configs overriding eachother
     example is at the bottom
@@ -2126,7 +2126,7 @@ local Library do
 
 
         CustomFont:New("ComicSans", 400, "Regular", {
-    Url = "https://github.com/antimatter15/doge/raw/refs/heads/master/Comic%20Sans%20MS.ttf"
+    Url = "https://github.com/PrincetonUniversity/COS333_Comet/raw/refs/heads/master/android/app/src/main/assets/fonts/Comic%20Sans%20MS.ttf"
 })
 
         Library.Font = CustomFont:Get("ComicSans")
